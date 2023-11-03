@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GALAXY</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/all.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="entry03.html">MEMORIES</a></li>
+                    <li><a href="entry02.html">Photo Gallery</a></li>
+                    <li><a href="entry04.html">POEMS</a></li>
+                    <li><a href="entry06.html">NASA GALLERY</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <body>
+            <h1>Into</h1>
+            <h2>The</h2>
+            <h3>Galaxy</h3>
+            <p> 
+                <a href="entry05.html"class="hero-btn">Where Have Gloria Been?</a>
+            </p>
+        </body>
+    </section>
+    <div class="container">
+        <h1>GALAXY IS <span class="auto-type"></span></h1>
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: ["STARS", "GAS", "DUST", "HISTORY"],
+            typeSpeed: 150,
+            backSpeed: 150,
+            loop: true
+        });
+    </script>
+</body>
+</html>
