@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title> PHOTOGALARY</title>
+        <link rel="stylesheet" href="style2.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+<header> <h1> .     </h1> </header>
+<h2><a href="entry01.html"class="hero-btn">Return To Home</a></h2>
+<h3> .     </h3>
+<body>
+    <div class="full-img" id="fullImgBox">
+        <img src="assets/ARCHES NATIONAL PARK, USA.jpeg" id="fullImg">
+        <span onclick="closeFullImg()">X</span>
+    </div>
+    <div class="gallery">
+        <a target="_blank" href="assets/ARCHES NATIONAL PARK, USA.jpeg">
+            <img src="assets/ARCHES NATIONAL PARK, USA.jpeg" alt="" width="200" height="140">
+        </a>
+        <div class="description">USA</div>
+    </div>
+    <div class="gallery">
+        <a target="_blank" href="assets/ATACAMA DESERT, CHILE.jpeg">
+            <img src="assets/ATACAMA DESERT, CHILE.jpeg" alt="" width="200" height="140">
+        </a>
+        <div class="description">CHILE</div>
+    </div>
+    <div class="gallery">
+        <a target="_blank" href="assets/BANFF, CANADA.jpeg">
+            <img src="assets/BANFF, CANADA.jpeg" alt="" width="200" height="140">
+        </a>
+        <div class="description">CANADA</div>
+    </div>
+    <div class="gallery">
+        <a target="_blank" href="assets/LA PALMA, SPAIN.jpeg">
+            <img src="assets/LA PALMA, SPAIN.jpeg" alt="" width="200" height="140">
+        </a>
+        <div class="description">SPAIN</div>
+    </div>
+    <div class="gallery">
+        <a target="_blank" href="assets/MOUNT BROMO, INDONESIA.jpeg">
+            <img src="assets/MOUNT BROMO, INDONESIA.jpeg" alt="" width="200" height="140">
+        </a>
+        <div class="description">INDONESIA</div>
+    </div>
+    <div class="gallery">
+        <a target="_blank" href="assets/NAMIB DESERT, NAMIBIA.jpeg">
+            <img src="assets/NAMIB DESERT, NAMIBIA.jpeg" alt="" width="200" height="140">
+        </a>
+        <div class="description">NAMIBIA</div>
+    </div>
+    <div class="gallery">
+        <a target="_blank" href="assets/TASMAN GLACIER, NEW ZEALAND.jpeg">
+            <img src="assets/TASMAN GLACIER, NEW ZEALAND.jpeg" alt="" width="200" height="140">
+        </a>
+        <div class="description">NEW ZEALAND</div>
+    </div>
+    <div class="gallery">
+        <a target="_blank" href="assets/THE DOLOMITES, ITALY.jpeg">
+            <img src="assets/THE DOLOMITES, ITALY.jpeg" alt="" width="200" height="140">
+        </a>
+        <div class="description">ITALY</div>
+    </div>
+    <div class="gallery">
+        <a target="_blank" href="assets/THE SAHARA DESERT, TUNISIA.jpeg">
+            <img src="assets/THE SAHARA DESERT, TUNISIA.jpeg" alt="" width="200" height="140">
+        </a>
+        <div class="description">TUNISIA</div>
+    </div>
+    <div class="gallery">
+        <a target="_blank" href="assets/WOLLEMI, AUSTRALIA.jpeg">
+            <img src="assets/WOLLEMI, AUSTRALIA.jpeg" alt="" width="200" height="140">
+        </a>
+        <div class="description">AUSTRALIA</div>
+    </div>
+<body>
+
+<div class="photos">
+    <img src="assets/ARCHES NATIONAL PARK, USA.jpeg" onclick="openFullImg(this.src)">
+    <img src="assets/ATACAMA DESERT, CHILE.jpeg" onclick="openFullImg(this.src)">
+    <img src="assets/BANFF, CANADA.jpeg" onclick="openFullImg(this.src)">
+    <img src="assets/LA PALMA, SPAIN.jpeg" onclick="openFullImg(this.src)">
+    <img src="assets/MOUNT BROMO, INDONESIA.jpeg" onclick="openFullImg(this.src)">
+    <img src="assets/NAMIB DESERT, NAMIBIA.jpeg" onclick="openFullImg(this.src)">
+    <img src="assets/TASMAN GLACIER, NEW ZEALAND.jpeg" onclick="openFullImg(this.src)">
+    <img src="assets/THE DOLOMITES, ITALY.jpeg" onclick="openFullImg(this.src)">
+    <img src="assets/THE SAHARA DESERT, TUNISIA.jpeg" onclick="openFullImg(this.src)">
+    <img src="assets/WOLLEMI, AUSTRALIA.jpeg" onclick="openFullImg(this.src)">
+</div>
+<script>
+    var fullImgBox = document.getElementById("fullImgBox");
+    var fullImg = document.getElementById("fullImg");
+
+    function openFullImg(pic){
+        fullImgBox.style.display = "flex";
+        fullImg.src = pic;
+    }
+
+    function closeFullImg(){
+        fullImgBox.style.display = "none";
+    }
+</script>
+<p>Best viewing points around the world.</p>
+</html>

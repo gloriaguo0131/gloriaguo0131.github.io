@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    font: lighter;
+    color: #fff;
+    background-color: black;
+    display: flex;
+    flex-direction: column; /* Added to make the content flow in a column */
+    align-items: center; /* Center horizontally */
+}
+
+.fade {
+    width: 100vh;
+    max-width: 640px;
+    margin: auto;
+    background-image: linear-gradient(
+        transparent 12%,
+        currentColor 30%,
+        currentColor 70%,
+        transparent 86%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-attachment: fixed;
+}
+
+.fade p {
+    margin: 20px 0;
+    font-size: 20px;
+    color: transparent;
+}
+
+h2 {
+    text-align: center; /* Center the text within the <h2> element */
+    position: fixed; /* Set to a fixed position */
+    top: 35px; /* Place at the top of the viewport */
+}

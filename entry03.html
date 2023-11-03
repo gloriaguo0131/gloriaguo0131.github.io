@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title> PHOTOGALARY</title>
+        <link rel="stylesheet" href="style2.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+<header> <h1> .     </h1> </header>
+<body>
+    <a href="entry01.html"class="hero-btn">Return To Home</a>
+</body>
+<div class="full-img" id="fullImgBox">
+    <img src="assets/newzealand/0228941c54a68053b6fb2693bf2c8583 2.JPG" id="fullImg">
+    <span onclick="closeFullImg()">X</span>
+</div>
+<div class="photos">
+    <img src="assets/newzealand/0228941c54a68053b6fb2693bf2c8583 2.JPG" onclick="openFullImg(this.src)">
+    <img src="assets/newzealand/0228941c54a68053b6fb2693bf2c8583.JPG" onclick="openFullImg(this.src)">
+    <img src="assets/newzealand/0eea3433d47f86af45105f3da51333bb.JPG" onclick="openFullImg(this.src)">
+    <img src="assets/newzealand/11d14af29279ae217bd3516dfaa89a6c.JPG" onclick="openFullImg(this.src)">
+    <img src="assets/newzealand/153713a686df11dd7ba4074a2ab6b6c2 2.JPG" onclick="openFullImg(this.src)">
+    <img src="assets/newzealand/153713a686df11dd7ba4074a2ab6b6c2.JPG" onclick="openFullImg(this.src)">
+    <img src="assets/newzealand/25effc6805fc2122edf4034836ff8a1f.JPG" onclick="openFullImg(this.src)">
+    <img src="assets/newzealand/2ac05515727f324f45b3c9550f66866f.JPG" onclick="openFullImg(this.src)">
+    <img src="assets/newzealand/2c2fad04b3f444e9f80d32065a5e6f0c.JPG" onclick="openFullImg(this.src)">
+    <img src="assets/newzealand/2d6d23a797aa372539d9d0ba35972dc6.JPG" onclick="openFullImg(this.src)">
+    <img src="assets/newzealand/312439acc89d672e0f4a4e9f24ea84b8.JPG" onclick="openFullImg(this.src)">
+    <img src="assets/newzealand/35228397550069353005efd5e321ab56 2.JPG" onclick="openFullImg(this.src)">
+</div>
+<script>
+    var fullImgBox = document.getElementById("fullImgBox");
+    var fullImg = document.getElementById("fullImg");
+
+    function openFullImg(pic){
+        fullImgBox.style.display = "flex";
+        fullImg.src = pic;
+    }
+
+    function closeFullImg(){
+        fullImgBox.style.display = "none";
+    }
+</script>
+<p>Best viewing points around the world.</p>
+</html>
