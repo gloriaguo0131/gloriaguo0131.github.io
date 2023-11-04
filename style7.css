@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color:black;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+}
+section{
+    width: 80%;
+    margin: 80px auto;
+}
+nav img{
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #ffffff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover{
+    border: 1px solid #36a358;
+    background: #36a358;
+    transition: 1s;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.container{
+    background-color:black;
+    background-repeat: repeat;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+}
+
+.container .heading{
+    font-size: 3rem;
+    padding: 2rem 0;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 0.5rem 1rem #000;
+    color: #fff;
+}
+
+.music-container{
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+}
+
+.container .music-container .box{
+    height: 16rem;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0.5rem 1rem #000;
+    overflow: hidden;
+    margin: 2rem;
+}
+
+.container .music-container .box .image{
+    height: 100%;
+    width: 25%;
+}
+
+.container .music-container .box .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.container .music-container .box .music{
+    width: 75%;
+}
+
+.container .music-container .box .music audio{
+    width: 100%;
+    outline: none;
+}
+
+.container .music-container .box .music audio::-webit-media-controls-enclosure{
+    background: none;
+}
+
+@media(max-width:600px){
+    .container .music-container .box{
+        height: 27rem;
+        width: 90%;
+        flex-flow: column;
+    }
+    .container .music-container .box .image{
+        height: 80%;
+        width: 100%;
+    }
+    .container .music-container .box .music{
+        height: 20%;
+        width: 100%;
+    }
+}
