@@ -4,49 +4,6 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body{
-    background-color:black;
-    text-align: center;
-    color: #fff;
-    font-size: 20px;
-}
-section{
-    width: 80%;
-    margin: 80px auto;
-}
-nav img{
-    width: 150px;
-    height: 200px;
-    object-fit: cover;
-}
-.nav-links{
-    flex: 1;
-    text-align: right;
-}
-.nav-links ul li{
-    list-style: none;
-    display: inline-block;
-    padding: 8px 12px;
-    position: relative;
-}
-.nav-links ul li a{
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 13px;
-}
-.nav-links ul li::after{
-    content: '';
-    width: 0%;
-    height: 2px;
-    background: #ffffff;
-    display: block;
-    margin: auto;
-    transition: 0.5s;
-}
-.nav-links ul li:hover::after{
-    width: 100%;
-}
-
 .hero-btn{
     display: inline-block;
     text-decoration: none;
@@ -63,6 +20,13 @@ nav img{
     border: 1px solid #36a358;
     background: #36a358;
     transition: 1s;
+}
+
+body{
+    background-color:black;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
 }
 
 html{
