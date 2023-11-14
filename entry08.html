@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A TRIP BACK HOME</title>
+    <link rel="stylesheet" href="style8.css">
+</head>
+<header> <p> .     </p> </header>
+<body>
+    <a href="entry01.html"class="hero-btn">Return To Home</a>
+</body>
+
+<body>
+    <div class="title">
+    </div>
+    <div>
+        <h1>What Does Earth Look Like From the Space?💫</h1>
+    </div>
+    <div id="banner">
+        <div class="img-list img-wrapper">
+            <div class="img-box">
+                <div class="info">
+                    <h3></h3>
+                    <h4>CHINA</h4>
+                </div>
+                <img src="assets/Country Nightview/China_at_night_by_VIIRS.jpg" alt="">
+            </div>
+            <div class="img-box">
+                <div class="info">
+                    <h3></h3>
+                    <h4>EUROPE</h4>
+                </div>
+                <img src="assets/Country Nightview/EUROPE_NIGHT.jpg" alt="">
+            </div>
+            <div class="img-box">
+                <div class="info">
+                    <h3></h3>
+                    <h4>USA</h4>
+                </div>
+                <img src="assets/Country Nightview/on_the_plane.jpg" alt="">
+            </div>
+            <div class="img-box">
+                <div class="info">
+                    <h3></h3>
+                    <h4>NORTHWEST HEMISHERE</h4>
+                </div>
+                <img src="assets/Country Nightview/us+hemisphere.jpg" alt="">
+            </div>
+            <div class="img-box">
+                <div class="info">
+                    <h3></h3>
+                    <h4>AFRICA+EUROPE</h4>
+                </div>
+                <img src="assets/Country Nightview/desktop-wallpaper-earth-night-lights-northern-europe-globe-space-for-iphone-android-mobile-and-world-lights.jpg" alt="">
+            </div>
+            <div class="img-box">
+                <div class="info">
+                    <h3></h3>
+                    <h4>PLANE VIEW</h4>
+                </div>
+                <img src="assets/Country Nightview/on_the_plane.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="btn-group">
+        <button class="last btn">
+            <svg t="1686471404424" class="icon left" viewBox="0 0 1024 1024" version="1.1"
+                xmlns="http://www.w3.org/2000/svg" p-id="2373" width="128" height="128">
+                <path
+                    d="M862.485 481.154H234.126l203.3-203.3c12.497-12.497 12.497-32.758 0-45.255s-32.758-12.497-45.255 0L135.397 489.373c-12.497 12.497-12.497 32.758 0 45.254l256.774 256.775c6.249 6.248 14.438 9.372 22.627 9.372s16.379-3.124 22.627-9.372c12.497-12.497 12.497-32.759 0-45.255l-203.3-203.301h628.36c17.036 0 30.846-13.81 30.846-30.846s-13.81-30.846-30.846-30.846z"
+                    fill="" p-id="2374"></path>
+            </svg>
+        </button>
+        <button class="next btn">
+            <svg t="1686471404424" class="icon right" viewBox="0 0 1024 1024" version="1.1"
+                xmlns="http://www.w3.org/2000/svg" p-id="2373" width="128" height="128">
+                <path
+                    d="M862.485 481.154H234.126l203.3-203.3c12.497-12.497 12.497-32.758 0-45.255s-32.758-12.497-45.255 0L135.397 489.373c-12.497 12.497-12.497 32.758 0 45.254l256.774 256.775c6.249 6.248 14.438 9.372 22.627 9.372s16.379-3.124 22.627-9.372c12.497-12.497 12.497-32.759 0-45.255l-203.3-203.301h628.36c17.036 0 30.846-13.81 30.846-30.846s-13.81-30.846-30.846-30.846z"
+                    fill="" p-id="2374"></path>
+            </svg>
+        </button>
+<body>
+    //scrolling gallery effect jc
+    <script>
+        const imgListOne = document.querySelector('.img-list')
+        let imgBoxList = Array.prototype.slice.call(document.querySelectorAll('.img-list .img-box'))
+        const imgBoxCount = imgBoxList.length
+        const root = document.documentElement;
+        const btnGroup = document.querySelector('.btn-group')
+        const lastBtn = document.querySelector('.last')
+        const nextBtn = document.querySelector('.next')
+        const lastImgBox = document.getElementById('last-img-box')
+
+        const postSpacing = Number(getComputedStyle(root).getPropertyValue('--post-spacing').replace("vw", ""));
+        const postSize = Number(getComputedStyle(root).getPropertyValue('--post-size').replace("vw", ""));
+
+        let imgListLength = (postSize + postSpacing) * imgBoxCount
+        console.log(imgListLength);
+        const imgBoxLength = postSize + postSpacing
+
+        let index = 0
+        let indexOne = 1
+        let timer = null
+        let animationTime = 0.5
+
+        imgBoxList.unshift(imgBoxList.pop())
+        imgListOne.style.transition = animationTime + 's ease'
+        setTimeout(function () {
+            btnGroup.style.opacity = '1'
+            btnGroup.style.bottom = '5%'
+        }, animationTime * 1000)
+        
+        function cilckFun(flag) {
+            if (flag == 'next') {
+                index--
+                console.log(index);
+                imgListOne.style.left = imgBoxLength * index + "vw";
+                setTimeout(function () {
+                    imgListOne.style.transition = 'none'
+                    if (Math.abs(index) == imgBoxCount) {
+                        index = 0
+                        imgListOne.style.left = 0
+                        imgBoxList.forEach(item => {
+                            if (item.id == 'last-img-box') {
+                                item.style.transform = `translateX(-160.68vw)`
+                            } else {
+                                item.style.transform = 'none'
+                            }
+                        });
+                    } else {
+                        if (imgBoxList[0].id == 'last-img-box') {
+                            lastImgBox.style.transition = 'none'
+                            lastImgBox.style.transform = 'translateX(0px)'
+                        } else if (index >= 0) {
+                            imgBoxList[0].style.transform = 'none'
+                        } else {
+                            imgBoxList[0].style.transform = 'translateX(160.68vw)'
+                        }
+                    }
+                    imgBoxList.push(imgBoxList.shift())
+                }, animationTime * 1000)
+            } else {
+                index++
+                console.log(index);
+                imgBoxList.unshift(imgBoxList.pop())
+                if (imgBoxList[0].id == 'last-img-box' && index != 0) {
+                    imgBoxList[0].style.transform = 'translateX(-321.36vw)'
+                } else if (index < 0) {
+                    imgBoxList[0].style.transform = 'none'
+                } else {
+                    imgBoxList[0].style.transform = 'translateX(-160.68vw)'
+                }
+                imgListOne.style.left = imgBoxLength * index + "vw";
+                lastImgBox.style.transition = 'none'
+                if (Math.abs(index) == imgBoxCount) {
+                    index = 0
+                    setTimeout(function () {
+                        imgListOne.style.transition = 'none'
+                        imgListOne.style.left = 0
+                        imgBoxList.forEach(item => {
+                            if (item.id == 'last-img-box') {
+                                item.style.transform = 'translateX(-160.68vw)'
+                            } else {
+                                item.style.transform = 'none'
+                            }
+                        });
+                    }, animationTime * 1000)
+                }
+            }
+            imgListOne.style.transition = animationTime + 's ease'
+        }
+
+        function throttle(fn, delay) {
+            return function () {
+                if (timer) {
+                    return
+                }
+                fn.apply(this, arguments)
+                timer = setTimeout(() => {
+                    timer = null
+                }, delay)
+            }
+        }
+
+        nextBtn.onclick = throttle(() => cilckFun('next'), animationTime * 1000);
+
+        lastBtn.onclick = throttle(() => cilckFun('last'), animationTime * 1000);
+    </script>
+</body>
+
+</html>
