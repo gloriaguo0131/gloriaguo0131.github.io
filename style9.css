@@ -19,6 +19,7 @@ header {
 }
 
 .team-area {
+    font-family: sans-serif;
     display: flex;
     flex-wrap: wrap;
     width: 90%;

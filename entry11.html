@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Collection Entry</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Adding styles for better contrast for users with visual impairments */
+        h1, h2 {
+            color: #333;
+        }
+
+        /* Styling links to be more noticeable for users with visual impairments */
+        a {
+            color: #3498db;
+            text-decoration: none;
+            border-bottom: 1px dotted #3498db;
+        }
+
+        /* Styling links on hover to provide visual feedback */
+        a:hover {
+            color: #2980b9;
+            border-bottom: 1px dotted #2980b9;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Accessible Collection Entry</h1>
+    </header>
+
+    <section>
+        <h2>Collection Information</h2>
+        <p>This is a collection entry with information about something interesting. It is designed to be accessible for all users.</p>
+        
+        <!-- Adding a link with a meaningful description for screen readers -->
+        <p>For more details, you can <a href="#more-details">click here</a>.</p>
+
+        <!-- Adding skip link for keyboard and screen reader users to skip to main content -->
+        <a href="#main-content" class="skip-link">Skip to main content</a>
+
+        <!-- Main content of the collection entry -->
+        <div id="main-content">
+            <p>Main content of the collection entry goes here...</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Your Website | Designed by Your Name</p>
+    </footer>
+
+</body>
+
+</html>
