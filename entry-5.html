@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style-5.css">
+</head>
+
+<body>
+    <div class="title">
+        <p> Best Spots to View the Milky Way 💫 </p>
+    </div>
+    <div>
+        <h1>A starry night sky with planets, constellations, and cosmic elements.</h1>
+    </div>
+    <div id="banner">
+        <div class="img-list img-wrapper">
+            <div class="img-box">
+                <div class="info">
+                    <h3>ARCHES NATIONAL PARK</h3>
+                    <h4>USA</h4>
+                </div>
+                <img src="assets/ARCHES NATIONAL PARK, USA.jpeg" alt="">
+            </div>
+            <div class="img-box">
+                <div class="info">
+                    <h3>BANFF</h3>
+                    <h4>CANADA</h4>
+                </div>
+                <img src="assets/BANFF, CANADA.jpeg" alt="">
+            </div>
+            <div class="img-box">
+                <div class="info">
+                    <h3>LA PALMA</h3>
+                    <h4>SPAIN</h4>
+                </div>
+                <img src="assets/LA PALMA, SPAIN.jpeg" alt="">
+            </div>
+            <div class="img-box">
+                <div class="info">
+                    <h3>THE DOLOMITES</h3>
+                    <h4>ITALY</h4>
+                </div>
+                <img src="assets/THE DOLOMITES, ITALY.jpeg" alt="">
+            </div>
+            <div class="img-box">
+                <div class="info">
+                    <h3>THE SAHARA DESERT</h3>
+                    <h4>TUNISIA</h4>
+                </div>
+                <img src="assets/THE SAHARA DESERT, TUNISIA.jpeg" alt="">
+            </div>
+            <div class="img-box" id="last-img-box">
+                <div class="info">
+                    <h3>MOUNT BROMO</h3>
+                    <h4>INDONESIA</h4>
+                </div>
+                <img src="assets/MOUNT BROMO, INDONESIA.jpeg" alt="">
+            </div>
+            <div class="img-box" id="last-img-box">
+                <div class="info">
+                    <h3>NAMIB DESERT</h3>
+                    <h4>NAMIBIA</h4>
+                </div>
+                <img src="assets/NAMIB DESERT, NAMIBIA.jpeg" alt="">
+            </div>
+            <div class="img-box" id="last-img-box">
+                <div class="info">
+                    <h3>ATACAMA DESERT</h3>
+                    <h4>CHILE</h4>
+                </div>
+                <img src="assets/ATACAMA DESERT, CHILE.jpeg" alt="">
+            </div>
+            <div class="img-box" id="last-img-box">
+                <div class="info">
+                    <h3>WOLLEMI</h3>
+                    <h4>AUSTRALIA</h4>
+                </div>
+                <img src="assets/WOLLEMI, AUSTRALIA.jpeg" alt="">
+            </div>
+            <div class="img-box" id="last-img-box">
+                <div class="info">
+                    <h3>TASMAN GLACIER</h3>
+                    <h4>NEW ZEALAND</h4>
+                </div>
+                <img src="assets/TASMAN GLACIER, NEW ZEALAND.jpeg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="btn-group">
+        <button class="last btn">
+            <svg t="1686471404424" class="icon left" viewBox="0 0 1024 1024" version="1.1"
+                xmlns="http://www.w3.org/2000/svg" p-id="2373" width="128" height="128">
+                <path
+                    d="M862.485 481.154H234.126l203.3-203.3c12.497-12.497 12.497-32.758 0-45.255s-32.758-12.497-45.255 0L135.397 489.373c-12.497 12.497-12.497 32.758 0 45.254l256.774 256.775c6.249 6.248 14.438 9.372 22.627 9.372s16.379-3.124 22.627-9.372c12.497-12.497 12.497-32.759 0-45.255l-203.3-203.301h628.36c17.036 0 30.846-13.81 30.846-30.846s-13.81-30.846-30.846-30.846z"
+                    fill="" p-id="2374"></path>
+            </svg>
+        </button>
+        <button class="next btn">
+            <svg t="1686471404424" class="icon right" viewBox="0 0 1024 1024" version="1.1"
+                xmlns="http://www.w3.org/2000/svg" p-id="2373" width="128" height="128">
+                <path
+                    d="M862.485 481.154H234.126l203.3-203.3c12.497-12.497 12.497-32.758 0-45.255s-32.758-12.497-45.255 0L135.397 489.373c-12.497 12.497-12.497 32.758 0 45.254l256.774 256.775c6.249 6.248 14.438 9.372 22.627 9.372s16.379-3.124 22.627-9.372c12.497-12.497 12.497-32.759 0-45.255l-203.3-203.301h628.36c17.036 0 30.846-13.81 30.846-30.846s-13.81-30.846-30.846-30.846z"
+                    fill="" p-id="2374"></path>
+            </svg>
+        </button>
+<body>
+    <script>
+        const imgListOne = document.querySelector('.img-list')
+        let imgBoxList = Array.prototype.slice.call(document.querySelectorAll('.img-list .img-box'))
+        const imgBoxCount = imgBoxList.length
+        const root = document.documentElement;
+        const btnGroup = document.querySelector('.btn-group')
+        const lastBtn = document.querySelector('.last')
+        const nextBtn = document.querySelector('.next')
+        const lastImgBox = document.getElementById('last-img-box')
+
+        const postSpacing = Number(getComputedStyle(root).getPropertyValue('--post-spacing').replace("vw", ""));
+        const postSize = Number(getComputedStyle(root).getPropertyValue('--post-size').replace("vw", ""));
+
+        let imgListLength = (postSize + postSpacing) * imgBoxCount
+        console.log(imgListLength);
+        const imgBoxLength = postSize + postSpacing
+
+        let index = 0
+        let indexOne = 1
+        let timer = null
+        let animationTime = 0.5
+
+        imgBoxList.unshift(imgBoxList.pop())
+        imgListOne.style.transition = animationTime + 's ease'
+        setTimeout(function () {
+            btnGroup.style.opacity = '1'
+            btnGroup.style.bottom = '5%'
+        }, animationTime * 1000)
+        
+        function cilckFun(flag) {
+            if (flag == 'next') {
+                index--
+                console.log(index);
+                imgListOne.style.left = imgBoxLength * index + "vw";
+                setTimeout(function () {
+                    imgListOne.style.transition = 'none'
+                    if (Math.abs(index) == imgBoxCount) {
+                        index = 0
+                        imgListOne.style.left = 0
+                        imgBoxList.forEach(item => {
+                            if (item.id == 'last-img-box') {
+                                item.style.transform = `translateX(-160.68vw)`
+                            } else {
+                                item.style.transform = 'none'
+                            }
+                        });
+                    } else {
+                        if (imgBoxList[0].id == 'last-img-box') {
+                            lastImgBox.style.transition = 'none'
+                            lastImgBox.style.transform = 'translateX(0px)'
+                        } else if (index >= 0) {
+                            imgBoxList[0].style.transform = 'none'
+                        } else {
+                            imgBoxList[0].style.transform = 'translateX(160.68vw)'
+                        }
+                    }
+                    imgBoxList.push(imgBoxList.shift())
+                }, animationTime * 1000)
+            } else {
+                index++
+                console.log(index);
+                imgBoxList.unshift(imgBoxList.pop())
+                if (imgBoxList[0].id == 'last-img-box' && index != 0) {
+                    imgBoxList[0].style.transform = 'translateX(-321.36vw)'
+                } else if (index < 0) {
+                    imgBoxList[0].style.transform = 'none'
+                } else {
+                    imgBoxList[0].style.transform = 'translateX(-160.68vw)'
+                }
+                imgListOne.style.left = imgBoxLength * index + "vw";
+                lastImgBox.style.transition = 'none'
+                if (Math.abs(index) == imgBoxCount) {
+                    index = 0
+                    setTimeout(function () {
+                        imgListOne.style.transition = 'none'
+                        imgListOne.style.left = 0
+                        imgBoxList.forEach(item => {
+                            if (item.id == 'last-img-box') {
+                                item.style.transform = 'translateX(-160.68vw)'
+                            } else {
+                                item.style.transform = 'none'
+                            }
+                        });
+                    }, animationTime * 1000)
+                }
+            }
+            imgListOne.style.transition = animationTime + 's ease'
+        }
+
+        function throttle(fn, delay) {
+            return function () {
+                if (timer) {
+                    return
+                }
+                fn.apply(this, arguments)
+                timer = setTimeout(() => {
+                    timer = null
+                }, delay)
+            }
+        }
+
+        nextBtn.onclick = throttle(() => cilckFun('next'), animationTime * 1000);
+
+        lastBtn.onclick = throttle(() => cilckFun('last'), animationTime * 1000);
+    </script>
+</body>
+
+</html>
