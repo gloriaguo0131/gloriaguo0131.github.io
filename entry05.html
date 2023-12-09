@@ -1,38 +1,74 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="with=device-width, initial-scale=1.0">
-        <title> PHOTOGALARY</title>
-        <link rel="stylesheet" href="style2.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
-<header> <h1> .     </h1> </header>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style5.css'>
+</head>
+
 <body>
-    <a href="entry01.html"class="hero-btn">Return To Home</a>
+    <div class="wrapper">
+        <a href="entry01.html"class="hero-btn">
+            Return To Home</a>
+        <h1 class="section-header">Where Has Gloria Been?</h1>
+        <div class="main-content">
+            <div class="box">
+                <img src="assets/IMG_8196.jpg" alt="">
+                <div class="img-text">
+                    <div class="content">
+                        <h2>USA</h2>
+                        <p> </p>
+                    </div>
+                </div>s
+            </div>
+            <div class="box">
+                <img src="assets/IMG_9510.jpg" alt="">
+                <div class="img-text">
+                    <div class="content">
+                        <h2>CANADA</h2>
+                        <p> </p>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="assets/IMG_8197.jpg" alt="">
+                <div class="img-text">
+                    <div class="content">
+                        <h2>NEW ZEALAND</h2>
+                        <p> </p>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="assets/IMG_8196.jpg" alt="">
+                <div class="img-text">
+                    <div class="content">
+                        <h2> </h2>
+                        <p>The silhouette of iconic geothermal features in Yellow Stone Park creates a unique juxtaposition of earthly and celestial marvels. Away from the city lights, the nightsky here transforms into a mesmerizing canvas, with the Milky Way stretching its radiant arms across the vast expanse above.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="assets/IMG_9510.jpg" alt="">
+                <div class="img-text">
+                    <div class="content">
+                        <h2> </h2>
+                        <p>Beneath the starry nightsky of Banff National Park, I found myself immersed in a personal symphony of celestial beauty. Away from city lights, the Rockies framed a cosmic masterpiece, with the Milky Way casting its radiant glow.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="assets/IMG_8197.jpg" alt="">
+                <div class="img-text">
+                    <div class="content">
+                        <h2> </h2>
+                        <p>Each moment under the Southern Hemisphere Cross felt intimately connected to the vastness of the universe. The nightsky in New Zealand, with its unique celestial display against diverse landscapes, etched memories of awe and wonder that will forever linger in my heart.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
-<div class="full-img" id="fullImgBox">
-    <img src="assets/newzealand/0228941c54a68053b6fb2693bf2c8583 2.JPG" id="fullImg">
-    <span onclick="closeFullImg()">X</span>
-</div>
-<div class="photos">
-    <img src="assets/IMG_8620.JPG" onclick="openFullImg(this.src)">
-    <img src="assets/IMG_8621 2.JPG" onclick="openFullImg(this.src)">
-    <img src="assets/IMG_8623.JPG" onclick="openFullImg(this.src)">
-</div>
-<script>
-    var fullImgBox = document.getElementById("fullImgBox");
-    var fullImg = document.getElementById("fullImg");
-
-    function openFullImg(pic){
-        fullImgBox.style.display = "flex";
-        fullImg.src = pic;
-    }
-
-    function closeFullImg(){
-        fullImgBox.style.display = "none";
-    }
-</script>
-<p>Captured by Gloria & Friends.</p>
 </html>
