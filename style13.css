@@ -1,5 +1,5 @@
 body{
-    font-family: Poppins;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: #000;
     color: #eee;
     margin: 0;
@@ -7,7 +7,34 @@ body{
 }
 a{
     text-decoration: none;
-    color: #000000;
+    color: #ffffff;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #ffffff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
 }
 header{
     width: 1140px;
@@ -15,7 +42,7 @@ header{
     margin: auto;
     height: 50px;
     display: flex;
-    align-items: center;
+    text-align: left;
     position: relative;
     z-index: 100;
 }
@@ -72,7 +99,7 @@ header a{
 }
 .nightsky .list .item .content button{
     border: none;
-    background-color: #eee;
+    background-color: #36a358;
     letter-spacing: 3px;
     font-family: Poppins;
     font-weight: 500;
@@ -111,7 +138,7 @@ header a{
     right: 10px;
 }
 .thumbnail .item .content .title{
-    font-size: bold;
+    font-weight: bold;
 }
 /* arrows */
 .arrows{
@@ -128,7 +155,7 @@ header a{
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: #eee4;
+    background-color: #eee;
     border: none;
     font-family: monospace;
     color: #fff;
@@ -138,7 +165,7 @@ header a{
     z-index: 100;
 }
 .arrows button:hover{
-    background-color: #eee;
+    background-color: #fff;
     color: #555;
 }
 .nightsky .list .item:nth-child(1){
@@ -264,8 +291,7 @@ header a{
     top:0;
     left:0;
 }
-.nightsky.next .time,
-.nightsky.prev .time{
+.nightsky.next .time, .nightsky.prev .time{
     width: 100%;
     animation: timeRunning 2s linear 1 forwards;
 }
@@ -276,10 +302,10 @@ header a{
     }
 }
 @media screen and (max-width:678px){
-    .nightsky .list .itmes .content{
+    .nightsky .list .items .content{
         padding-right: 0;
     }
-    .nightsky .list .itmes .content .title{
+    .nightsky .list .items .content .title{
         font-size: 30px;
     }
 }

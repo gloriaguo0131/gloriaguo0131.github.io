@@ -4,6 +4,15 @@
     box-sizing: border-box;
     outline: none;
 }
+header{
+    position: relative;
+}
+h2{
+    text-align: left;
+}
+h3{
+    text-align: left;
+}
 .hero-btn{
     display: inline-block;
     text-decoration: none;

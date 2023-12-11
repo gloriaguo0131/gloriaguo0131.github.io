@@ -1,0 +1,136 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #ffffff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(assets/new\ zealand.png);
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #36a358;
+    background: #36a358;
+    transition: 1s;
+}
+.navbar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+}
+.row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+.col{
+    flex-basis: 50%;
+}
+h1{
+    color: #fff;
+    font-size: 100px;
+}
+p{
+    color: #fff;
+    font-size: 12px;
+    line-height: 15px;
+}
+a{
+    color: #fff;
+}
+button{
+    width: 180px;
+    color: #fff;
+    font-size: 12px;
+    padding: 12px 0;
+    background: #36a358;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+}
+.card{
+    width: 250px;
+    height: 280px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+} 
+.card1{
+    background-image: url(assets/NPS_WashburnLookout_MilkyWay_JUN17_FrankJacob.jpg);
+}
+.card2{
+    background-image: url(assets/canada\ .png);
+}
+.card3{
+    background-image: url(assets/new\ zealand.png);
+}
+.card:hover{
+    transform: translateY(-10px);
+}
+h5{
+    color: #fff;
+    text-shadow: 0 0 5px #999;
+}

@@ -19,7 +19,7 @@ let runAutoRun = setTimeout(()=>{
 
 function showSlider(type){
     let itemSlider = document.querySelectorAll('.nightsky .list .item');
-    let itemaThumbnail = document.querySelectorAll('.nightsky .thumbnail .item');
+    let itemThumbnail = document.querySelectorAll('.nightsky .thumbnail .item');
 
     if(type === 'next'){
         listItemDom.appendChild(itemSlider[0]);
@@ -32,7 +32,7 @@ function showSlider(type){
         nightskyDom.classList.add('prev');
     }
 
-    clearTimeOut(runTimeOut);
+    clearTimeout(runTimeOut);
     runTimeOut = setTimeout(() =>{
         nightskyDom.classList.remove('next');
         nightskyDom.classList.remove('prev');

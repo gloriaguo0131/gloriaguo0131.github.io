@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Where Has Gloria Been?</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style15.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/all.min.css">
+</head>
+<body>
+    </style>
+</body>
+<body>
+    <div class="container">
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="entry01.html">HOME</a></li>
+                    <li><a href="entry03.html">MEMORIES</a></li>
+                    <li><a href="entry08.html">A TRIP BACK HOME</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="row">
+            <div class="col">
+                <h1>BEEN TO</h1>
+                <p> ------------------------------------------------------------</p>
+                <p>  Stargazing is a deeply personal experience for me, a silent conversation with the universe 
+                     that invokes a profound sense of wonder. The celestial expanse above serves as a timeless canvas,
+                     prompting reflection on life's complexities and my place in the grand cosmic scheme. 
+                     Each twinkle of a star carries a message of boundless possibilities and interconnectedness, 
+                     offering solace and inspiration in the simplicity of a night sky. Stargazing is not just observing; 
+                     it's a brief but profound journey into self-discovery and the mysteries that unfold beyond our terrestrial existence.</p>
+                    <p>  ------------------------------------------------------------ </p>
+                    <!--chat gpt-->
+                    <button id="playPauseButton">Play Audio</button>
+                    <audio id="audioPlayer" src="assets/audio/Been To Audio.m4a" preload="auto"></audio>
+
+                    <script>
+                        document.addEventListener("DOMContentLoaded", function () {
+                            var audio = document.getElementById("audioPlayer");
+                            var playPauseButton = document.getElementById("playPauseButton");
+                    
+                            playPauseButton.addEventListener("click", function () {
+                                if (audio.paused) {
+                                    audio.play();
+                                    playPauseButton.innerHTML = "Pause";
+                                } else {
+                                    audio.pause();
+                                    playPauseButton.innerHTML = "Play";
+                                }
+                            });
+                        });
+                    </script>
+                    <a href="entry14.html"class="hero-btn">LEARN MORE</a>
+            </div>
+            <div class="col">
+                <div class="card card1">
+                    <h5><a href="assets/IMG_8623.JPG">USA</a></h5>
+                    <p>
+                        As I stand surrounded by the mesmerizing geothermal wonders of 
+                        Yellowstone Park, the unique silhouettes form a deeply personal 
+                        connection between the earthly beauty and celestial wonders above. 
+                        Underneath the open nightsky, I feel an intimate embrace from the captivating canvas, 
+                        where the Milky Way extends its radiant arms across the vast expanse,
+                        weaving a celestial tapestry that feels uniquely mine.</p>
+                        
+                </div>
+                <div class="card card2">
+                    <h5><a href="assets/IMG_8621 2.JPG">CANADA</a></h5>
+                    <p>Underneath the star-studded nightsky of Banff National Park, 
+                        I discovered myself enveloped in a personal symphony of celestial beauty. 
+                        Escaping the glow of city lights, the Rockies cradled a cosmic masterpiece, 
+                        and the Milky Way adorned the scene with its radiant glow, 
+                        creating a moment that resonates deeply within me.</p>
+                </div>
+                <div class="card card3">
+                    <h5><a href="assets/IMG_8620.JPG">NEW ZEALAND</a></h5>
+                    <p>Every moment spent beneath the Southern Hemisphere Cross felt like 
+                        a personal connection to the boundless universe. The New Zealand nightsky, 
+                        adorned with its distinctive celestial dance set against diverse landscapes, 
+                        has etched memories of awe and wonder that will forever linger in the depths of my heart.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

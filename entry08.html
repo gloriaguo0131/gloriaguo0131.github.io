@@ -5,11 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A TRIP BACK HOME</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/all.min.css">
     <link rel="stylesheet" href="style8.css">
 </head>
 <header> <p> .     </p> </header>
 <body>
-    <a href="entry01.html"class="hero-btn">Return To Home</a>
+    <a href="entry15.html"class="hero-btn">Return</a>
 </body>
 
 <body>
@@ -185,8 +189,30 @@
 
         nextBtn.onclick = throttle(() => cilckFun('next'), animationTime * 1000);
 
-        lastBtn.onclick = throttle(() => cilckFun('last'), animationTime * 1000);
+        lastBtn.onclick = throttle(() => cilckFun('last'), animationTime * 1000);s
     </script>
 </body>
+<footer>
+    As a city girl, the nightly dance of urban lights takes on a cosmic resonance, transforming the familiar cityscape into a celestial marvel. The city lights, scattered like my own constellations, mirror the hustle and bustle of my daily life. Skyscrapers become towering celestial bodies, and the glow from countless windows reflects the brilliance of distant stars. Yet, in the heart of this urban galaxy, I feel a paradoxical yearning for the quiet mysteries of the cosmos. The pulsating vibrancy of the city below is a testament to human endeavor, while the distant galaxies whisper of a cosmic silence that transcends the urban rhythm. In this nightly interplay, I find a personal connection between my bustling city life and the vastness of the universe, a reminder that even within the urban sprawl, the celestial dance continues, linking my earthly existence to the timeless cosmic narrative overhead.
+</footer>
+<!--chat gpt-->
+<button id="playPauseButton">Play Audio</button>
+<audio id="audioPlayer" src="assets/audio/A Trip Back Home Audio.m4a" preload="auto"></audio>
 
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var audio = document.getElementById("audioPlayer");
+        var playPauseButton = document.getElementById("playPauseButton");
+
+        playPauseButton.addEventListener("click", function () {
+            if (audio.paused) {
+                audio.play();
+                playPauseButton.innerHTML = "Pause";
+            } else {
+                audio.pause();
+                playPauseButton.innerHTML = "Play";
+            }
+        });
+    });
+</script>
 </html>

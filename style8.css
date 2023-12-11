@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
 }
 
 body{
@@ -13,7 +12,17 @@ body{
 h1{
     color: #fff;
 }
-
+button{
+  width: 180px;
+  color: #fff;
+  font-size: 12px;
+  padding: 12px 0;
+  background: #36a358;
+  border: 0;
+  border-radius: 20px;
+  outline: none;
+  margin-top: 30px;
+}
 
 section{
     width: 80%;
